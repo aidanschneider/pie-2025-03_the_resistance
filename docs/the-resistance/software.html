@@ -102,6 +102,11 @@
                             <p>We chose an Arduino Nano to bridge between the Raspberry Pi and the PCB because the Raspberry Pi operates at 3.3V logic, while the PCB requires 5V. Connecting these two directly over a communication interface like UART could exceed the Raspberry Pi’s 3.3V GPIO limits and risk permanently damaging its pins. Instead, the Arduino Nano connects to the Raspberry Pi via USB, and then interfaces with the PCB over its hardware Serial pins. This approach protects the Raspberry Pi’s GPIO pins from overvoltage damage and eliminates the need for an external logic level converter or similar voltage buffer, which could otherwise degrade signal integrity.</p>
                         </div>
 
+                        <h2 id="bridge">Design Considerations</h2>
+                        <div class="scroll-reveal">
+                            <p>Please see our "Electrical" page for the design considerations we made. Our software design decisions directly correlate to those made in the electrical subsystem.</p>
+                        </div>
+
                     </section>
 
                 </div>
